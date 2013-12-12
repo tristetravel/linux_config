@@ -16,7 +16,7 @@
 
 #extend old
 
-alias vim="mvim -v"
+alias vim="vim -v"
 
 alias vi="vim"
 alias edit="vim"

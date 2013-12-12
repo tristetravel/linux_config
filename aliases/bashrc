@@ -1,0 +1,15 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
+export DISTCC_HOSTS=" --randomize --localslots=6 --localslots_cpp=6 localhost/4 10.123.17.59/12 10.125.28.55/12 10.125.30.19/12 10.123.17.6/12 10.123.17.14/12"
+
+export DISTCC_SKIP_LOCAL_RETRY=1

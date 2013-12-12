@@ -52,9 +52,11 @@ export HOSTSHORT=`hostname`
 export OS=`uname`;
 
 #export LC_ALL='zh_CN.GBK'
-export LC_ALL='en_US.UTF-8'
+#export LC_ALL='en_US.UTF-8'
+export LC_ALL='zh_CN.UTF-8'
 #export LANG='zh_CN.GBK'
-export LANG='en_US.UTF-8'
+#export LANG='en_US.UTF-8'
+export LANG='zh_CN.UTF-8'
 
 export EDITOR='vim'
 export SVN_EDITOR=vim
@@ -76,7 +78,7 @@ fi
 
 
 #all aliases
-ALIASES=`\ls ~/.*aliases`
+ALIASES=`ls ~/.*aliases`
 for f in $ALIASES
 do
   if [ -f $f ];then
@@ -85,7 +87,7 @@ do
 done
 
 #all completion
-ALIASES=`\ls ~/.*completion`
+ALIASES=`ls ~/.*completion`
 for f in $ALIASES
 do
   if [ -f $f ];then
@@ -113,3 +115,4 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
